@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EditInput from "../EditInput/EditInput";
+import EditInput from "../edit-input/EditInput";
 import "./Tasks.modules.css";
 
 function Tasks({ tasks, onAdd, id, content }) {

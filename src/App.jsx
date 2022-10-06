@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddNewTask from "./components/AddNewTask/AddNewTask";
+import AddNewTask from "./components/add-new-task/AddNewTask";
 import Tasks from "./components/Tasks/Tasks";
 import Modal from "./components/modal/Modal";
 import DeleteTasksModal from "./components/modal/DeleteTasksModal";

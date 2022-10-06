@@ -1,0 +1,15 @@
+.modal {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background-color: rgb(29, 31, 119);
+  color: #fff;
+  margin: auto;
+  padding: 2rem 4rem;
+  z-index: 1;
+}
+
+.modal div {
+  display: flex;
+  justify-content: center;
+}

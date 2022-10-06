@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import EditInput from "../EditInput/EditInput";
 import "./Tasks.modules.css";
 
-function Tasks({tasks, onAdd, id, content}) {
+function Tasks({ tasks, onAdd, id, content }) {
   const [showEditField, setShowEditField] = useState(false);
 
   function showInput() {

@@ -19,7 +19,7 @@ function App() {
         onClick={() => {
           setShowModal(true);
         }}>
-        Delete all
+        Delete {tasks.length > 1 ? "tasks" : "task"}
       </button>
     );
   }

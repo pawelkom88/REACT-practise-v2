@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import EditInput from "../edit-input/EditInput";
-import close from "../../close.svg";
 import "./Tasks.modules.css";
 
 function Tasks({ tasks, onAdd, id, content }) {

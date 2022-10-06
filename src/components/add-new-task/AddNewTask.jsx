@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Form from "../form/Form";
 import styles from "./AddNewTask.module.css";
 
-function AddNewTask({ tasks, onAdd }) {
+function AddNewTask({ onAdd }) {
   const [task, setTask] = useState("");
 
   function addTask(e, newTask) {
@@ -16,11 +16,6 @@ function AddNewTask({ tasks, onAdd }) {
     // clear input field after every submit
     setTask("");
   }
-
-  useEffect(() => {
-    // add tasks to local storage
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   const formProps = {
     formClass: styles["add-task-form"],

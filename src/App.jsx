@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddNewTask from "./components/add-new-task/AddNewTask";
 import Tasks from "./components/tasks/Tasks";
 import Modal from "./components/modal/Modal";
@@ -23,6 +23,11 @@ function App() {
       </button>
     );
   }
+
+  useEffect(() => {
+    // add tasks to local storage
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <div className="container">

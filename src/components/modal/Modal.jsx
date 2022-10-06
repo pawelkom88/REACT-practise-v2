@@ -1,8 +1,8 @@
 import styles from "./Modal.module.css";
 
-export default function Modal({ children, onClick }) {
+export default function Modal({  children }) {
   return (
-    <dialog onClick={onClick} className={styles.modal} open>
+    <dialog className={styles.modal} open>
       {children}
     </dialog>
   );

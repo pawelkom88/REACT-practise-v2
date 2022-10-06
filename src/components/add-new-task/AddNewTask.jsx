@@ -11,8 +11,6 @@ function AddNewTask({ tasks, onAdd }) {
 
     if (task.length > 0) {
       onAdd(prevTasks => [...prevTasks, { id: uuidv4(), content: newTask }]);
-    } else {
-      alert("Empty field");
     }
 
     // clear input field after every submit
